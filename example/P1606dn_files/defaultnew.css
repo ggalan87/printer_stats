@@ -1,0 +1,1092 @@
+body {
+   background-color:#ffffff;
+   margin:0px;
+   padding:0px;
+}
+/*  avoid styling the span tag wrt any font settings.  */
+body, th, td, div, p, button, select, input {
+   font-family:Arial,sans-serif;
+}
+
+body,td,input,button,th,caption {
+   font-size:70%;
+}
+* html body,* html td,* html input,* html button,* html th {
+   font-size:67%;
+}
+select {
+   font-size:100%;
+}
+
+/*  percentage fonts must be used carefully */
+/* for ie we dont want to set body td, body th, back to 100%, as these dont properly inherit from the body in the first place.  */
+/*  oddly enough though, td does inherit from div in IE, although not from anything else.*/
+div td,body input, body button,
+td input, td button, th input, th button, 
+body div,body table, body td, body th, body caption{
+   font-size:100%;
+}
+
+body,td,p {
+  background-color: #ffffff; /*color:#000000;*/
+}
+
+h1,h2,h3,h4{   
+   margin:5px 0px 10px 0px;
+   color:#000000;
+   vertical-align:center;
+}
+
+h1 {font-size:180%;font-weight:normal; }
+h2 {font-size:170%;font-weight:normal;}
+h3 {font-size:150%;}
+h4 {font-size:130%;}
+h5 {
+   margin: 0 0 7px 0;
+   font-size:100%;
+}
+
+hr {
+   border:0px;
+   height:1px;
+   overflow:hidden;
+   color:#cccccc;
+   background-color:#cccccc;
+   margin: 0 5px 5px 5px;
+}
+
+
+* html hr {
+   margin-top:-5px;
+   position:relative;
+   top:5px;
+}
+
+
+.hv {
+   float:right;
+   direction:ltr;
+   margin: 0 4px 8px 8px;
+   height: 16px;
+   width: 4px;
+   background-image:url(images/divider.gif);
+   cursor: default;
+}
+
+
+
+form {
+   display:inline;
+}
+span.whiteSpacer {
+   font-size:8px;
+}
+
+input.mini {
+   width:50px;
+   border: 1px solid #6699cc;
+   padding-left: 2px;
+}
+
+input.small {
+   width:100px;
+   border: 1px solid #6699cc;
+   padding-left: 2px;
+}
+
+select.medium {
+   width:145px;
+}
+
+input.medium {
+   width:145px;
+   border: 1px solid #6699cc;
+   padding-left: 2px;
+}
+
+input.large {
+   width:235px;
+   border: 1px solid #6699cc;
+   padding-left: 2px;
+}
+
+input.xlarge {
+   width:250px;
+   border: 1px solid #6699cc;
+   padding-left: 2px;
+}
+
+option {
+   overflow: visible;
+   clip: auto;
+}
+
+div.clearFloats {
+   clear:both;
+   height:1px;
+   overflow:hidden;
+   margin-bottom:-1px;
+}
+
+
+/* Framework */
+
+.applicationPalette {
+   margin: 7px;
+   WIDTH: 99%;
+}
+
+.leftContentPane {
+   border:7px solid #ccc; 
+   vertical-align: top;
+}
+
+.rightContentPane {
+   border-width: 7px 7px 7px 0; 
+   border-style: solid; 
+   border-color: #cccccc; 
+   vertical-align: top; 
+   width:100%;
+}
+.mainRegion {
+   padding-top: 5px;
+   background-color: #cccccc;
+}
+.paletteBg {
+   padding-top: 11px;
+   background-color: #cccccc;
+}
+
+.paletteTop h1 {
+   margin: 0px !important;
+}
+.paletteTopButtons {
+   margin: 0;
+   padding: 6px 8px 0 0;
+}
+.mainNav {
+   width: 214px;
+}
+#navigationControl {
+   padding: 2px;
+}
+.mainContentArea {
+   width: 95%;
+}
+
+/* user identification */
+div.userId {
+   margin:8px 0 8px 15px;
+}
+td.userId {
+   padding: 5px 0 0 15px;
+}
+td.status {
+   text-align: right; 
+   padding: 5px 23px 0 0; 
+   color: #999999
+}
+
+
+/* Application Masthead */
+
+table.applicationMastheadSmall {
+   width: 100%;
+}
+
+table.applicationMastheadSmall,
+table.applicationMastheadSmall td,
+table.applicationMastheadLarge,
+table.applicationMastheadLarge td {
+   background-color:#4FAF00;
+   color:#ffffff;
+   vertical-align:top;
+}
+td.mastheadIcon{
+   padding-top:14px;
+   padding-left:17px;
+}
+td.mastheadTitle {
+   width: 70%;
+   padding:16px 0 0 16px;
+}
+td.medium {
+   width:145px;
+}
+
+td.large {
+   width:30%;
+}
+
+table.applicationMastheadLarge td.mastheadIcon {
+   padding-top:15px;
+   padding-left:17px;
+}
+table.applicationMastheadLarge td.mastheadTitle {
+   padding-top:16px;
+   padding-left:16px;
+}
+
+td.mastheadTitle h1{
+   padding:0px;
+   margin:0px;
+   padding-right:16px;
+   color:#ffffff;
+   white-space:nowrap;
+}
+table.applicationMastheadLarge td.mastheadTitle h1 {
+   font-size:200%;
+}
+div.mastheadPhoto {
+   background:#fff;
+   border-left:7px solid #fff;
+   float:right;
+   width:306px;
+   height:57px;
+}
+td.mastheadLinks {   
+   padding:12px 16px;
+   white-space:nowrap;
+   border-left:7px solid #fff;
+   width:30%;
+}
+table.applicationMastheadSmall a:link,
+table.applicationMastheadSmall a:visited,
+table.applicationMastheadSmall a:active,
+table.applicationMastheadSmall a:hover,
+table.applicationMastheadLarge a:link,
+table.applicationMastheadLarge a:visited,
+table.applicationMastheadLarge a:active,
+table.applicationMastheadLarge a:hover{
+   color:#ffffff;
+   text-decoration:underline;
+}
+
+
+/* Navigation Control */
+#navigationControl {
+   margin-top: 2px;
+}
+div.navigationControlOn,div.navigationControlOff,div.navigationControlHeader {
+   background-color:#ffffff;
+   padding: 3px 7px 4px 8px;
+}
+
+div.navigationControlHeader {
+   font-weight: bold;
+}
+div.navigationControlOn {
+   background-color:#99ccff;
+}
+div.navigationControlOff {
+   background-color:#ffffff;
+}
+
+div.navigationControlOn a:link,div.navigationControlOn a:visited,div.navigationControlOn a:active {
+   text-decoration:none;
+   color:#000000;
+}
+div.navigationControlOff a:link,div.navigationControlOff a:visited,div.navigationControlOff a:active {
+   text-decoration:none;
+   color:#003399;
+}
+div.navigationControlOn a:hover {
+   text-decoration:underline;
+   color:#000000;
+}
+div.navigationControlOff a:hover {
+   text-decoration:underline;
+   color:#003399;
+}
+div.navigationControlSpacer {
+   height:5px;
+   overflow:hidden;
+}
+div.navigationControlIcon {
+   float:left;
+   clear:both;
+   margin-top:2px;
+   padding-left:2px;
+}
+
+/* links */
+a:link, a:visited, a:active, a:hover {
+   color:#003399;
+   text-decoration:none;
+}
+a:hover {
+   text-decoration:underline;
+}
+
+
+/* Tabs */
+div.tabSet, div.secondaryTabSet {
+   
+}
+div.tabSet {
+   background-image:url(/Images/tab_set_bg.gif);
+}
+div.secondaryTabSet {
+   background-image:url(tab_set_secondary_bg.gif);
+}
+* html div.tabSet, * html div.secondaryTabSet {
+   
+}
+div.tabOff,div.tabOn {
+   float:left;
+   text-align:center;
+   height:14px;
+   font-weight:bold;
+   white-space:nowrap;
+}
+div.tabOff {
+/* background color and background image are a part of the theme css */
+   background-color:#86BB5B;
+   background-image:url(/Images/tab_right.gif);
+   background-position:top right;
+   background-repeat:no-repeat;
+   color:#ffffff;
+   padding:2px 13px 4px 10px;
+   border-bottom:2px solid #fff;
+   border-right:2px solid #fff;
+   cursor:pointer;
+   cursor:hand;
+}
+div.tabOn {
+   background-color:#cccccc;
+   color:#333333;
+   padding:2px 13px 6px 10px;
+   border-right:3px solid #fff;
+}
+div.tabOff a:link,
+div.tabOff a:visited,
+div.tabOff a:active,
+div.tabOff a:hover{
+   color:#ffffff;
+   text-decoration:none;
+}
+div.tabOn a:link,
+div.tabOn a:active,
+div.tabOn a:visited,
+div.tabOn a:hover{
+   color:#333333;
+   text-decoration:none;
+}
+div.secondaryTabSet div.tabOn{
+   background-color:#ffffff;
+   border-right:3px solid #cccccc;
+}
+div.secondaryTabSet div.tabOff{
+   background-color:#86BB5B;
+   background-image:url(tab_secondary_right.gif);
+   background-position:top right;
+   background-repeat:no-repeat;
+   border-bottom:2px solid #ccc;
+   border-right:2px solid #ccc;
+   min-width:58px;
+   padding:1px 13px 3px 10px;
+}
+div.tabBottomLine {  
+   clear:both;
+   height:3px;
+   overflow:hidden;
+   background-color:#cccccc;
+}
+div.tabOff {
+   min-width:88px;
+}
+div.tabOn {
+   min-width:89px;
+}
+div.secondaryTabSet div.tabOn{
+   min-width:59px;
+   padding:1px 13px 5px 10px;
+}
+
+
+/* Command Button */
+div.buttonSet {
+   float:right;
+   margin-bottom:10px;
+}
+
+div.bWrapperUp,
+div.bWrapperOver,
+div.bWrapperDown,
+div.bWrapperDisabled {
+   float:right;
+   direction:ltr;
+   margin-left:8px;
+   margin-bottom:4px;
+}
+
+/* buttonsAreLeftAligned is a modifier class, modifying buttonSet */
+div.buttonsAreLeftAligned, 
+div.buttonsAreLeftAligned div.bWrapperUp,
+div.buttonsAreLeftAligned div.bWrapperOver,
+div.buttonsAreLeftAligned div.bWrapperDown,
+div.buttonsAreLeftAligned div.bWrapperDisabled {
+   align=center;
+   float:left;
+   margin-left:0px;
+   margin-right:8px;
+}
+
+/* buttonsAreRightAligned is a modifier class, modifying buttonSet */
+div.buttonsAreRightAligned, 
+div.buttonsAreRightAligned div.bWrapperUp,
+div.buttonsAreRightAligned div.bWrapperOver,
+div.buttonsAreRightAligned div.bWrapperDown,
+div.buttonsAreRightAligned div.bWrapperDisabled {
+   float:right;
+   margin-left:8px;
+   margin-right:0px;
+   width:100%;
+}
+
+
+div.verticalButtonSet {
+   padding-right:10px;
+}
+div.verticalButtonSet div.bWrapperUp,
+div.verticalButtonSet div.bWrapperOver,
+div.verticalButtonSet div.bWrapperDown,
+div.verticalButtonSet div.bWrapperDisabled {
+   float:none;
+   margin-left:0px;
+}
+
+/* this position relative css is what turns the three divs into the 3px slant effect */
+div.bWrapperUp div,
+div.bWrapperOver div,
+div.bWrapperDown div,
+div.bWrapperDisabled div{
+   position:relative;
+   left:-1px;
+   top:-1px;
+}
+
+button.hpButtonSmall,input.hpButtonSmall {
+   padding:0px 4px;
+   height:19px;
+   min-width:19px;
+   color: #ffffff; 
+}
+button.hpButtonVerySmall,input.hpButtonVerySmall{
+   padding:0px 2px;
+   height:11px;
+   font-size:9px;
+   color: #ffffff; 
+}
+
+button.helpButton,input.helpButton {
+   padding:0px 3px 0px 2px;
+   color: #ffffff; 
+}
+button.hpButton,
+button.hpStdButton,
+button.hpStdButtonLarge,
+button.hpButtonSmall,
+button.hpButtonVerySmall,
+input.hpStdButton,
+input.hpStdButtonLarge,
+input.hpButton,input.hpButtonSmall,
+input.hpButtonVerySmall {
+   background-color: #86BB5B;
+   position:relative;
+   left:-1px;
+   top:-1px;   
+/* background color a part of the theme css */
+   color: #ffffff; 
+   font-weight:bold;
+   text-decoration: none;   
+   font-family: Arial,sans-serif;
+   text-align:center;
+   cursor:pointer;
+   cursor:hand;
+}
+
+div.bEmphasized button,
+div.bEmphasized input,
+div.bEmphasized submit{
+   background-color:#336633;
+   color:#ffffff;
+}
+
+div.bDivider {
+   float:right;
+   direction:ltr;
+   margin: 0 4px 8px 8px;
+   height: 16px;
+   width: 4px;
+   height:19px;
+   background-image:url(divider.gif);
+   cursor: default;
+}
+div.bDividerBlank {
+   float:right;
+   direction:ltr;
+   margin: 0 2px 8px 8px;
+   height: 16px;
+   width: 4px;
+}
+
+ 
+input.hpButton {
+   height:19px;
+   color: ; 
+   min-width:95px; 
+}
+
+input.hpStdButton {
+   height:19px;
+   color: #ffffff; 
+   min-width:89px;
+}
+
+input.hpStdButtonLarge {
+   height:19px;
+   color: #ffffff; 
+   text-align:center;
+   min-width:110px;
+}
+
+button.hpButton {
+   height:19px;
+   color: #ffffff; 
+   min-width:95px;
+}
+
+button.hpStdButton {
+   height:19px;
+   color: #ffffff; 
+   min-width:89px;
+}
+
+button.hpStdButtonLarge {
+   height:19px;
+   color: #ffffff;  
+   text-align:center;
+   min-width:110px;
+}
+
+
+/* works to eliminate the pushed-in button movement on mozilla, 
+at the expense of an extra pixel of button jutting out on the 
+left side during the pushed-in state.   
+button.hpButton:active,input.hpButton:active {
+   margin-left:-1px;
+   margin-right:1px;
+} */
+
+
+div.verticalButtonSet {
+   padding-left:13px;
+}
+
+/* LABEL, TEXT,  NOTES  */
+.pad10 {
+   padding:10px;
+}
+.pad6x10 {
+   padding:6px 10px;
+}
+
+/* table cell padding */
+table.tablePad3 td {
+   vertical-align: top;
+   padding-bottom: 3px;
+}
+
+td.aln {
+  text-indent:-4px;
+}
+
+td.tableCellNote {
+   padding: 7px 0 9px 0 !important;
+}
+
+/* LIST STYLES  */
+ul,ol {padding-top:5px;margin-top:0px;padding-bottom:10px;margin-bottom:0px;}
+ul ul, ol ol, ul ol, ol ul {padding-top:0px;padding-bottom:10px;margin-top:0px;margin-bottom:0px;}
+ul {margin-left: 22px; padding-left: 0px;}
+ol {margin-left: 22px; padding-left: 0px;}
+
+          ul li,
+      ol ul li,
+ ol ul ul li,
+ ol ol ul li,
+ ul ol ul li
+ {
+   list-style-image:url(bullet.gif);
+   margin-bottom:2px;
+}
+          ol li,
+      ul ol li,
+ ul ol ol li,
+ ul ul ol li,
+ ol ul ol li
+{
+   list-style-image:none;
+}
+ol li ol li {
+   list-style:lower-alpha;
+}
+ol li ol li ol li{
+   list-style:lower-roman;
+}
+
+/*titles and subtitles*/
+h1.pageTitle {
+   margin-top:11px;
+   margin-bottom:8px;
+   margin-left:8px;
+}
+div.pageTitleRightArea {
+
+}
+h3.subTitle {
+   background-color:#666;
+   font-weight:bold;
+   color:#fff;
+   padding:3px 5px 3px 9px;
+   margin:0px;
+   font-size:100%;
+}
+div.subTitleBottomEdge {
+   height:3px;
+   overflow:hidden;
+   background:#484848;
+}
+div.subTitleIcon {
+   float:right;
+   margin-top:2px;
+}
+
+.buttonA {  
+   margin-left: 5px;
+   background-color:#86BB5B; 
+   color: #ffffff; 
+   font-weight:bold;
+   text-decoration: none;   
+   font-family: Arial,sans-serif;
+   text-align:center;
+   cursor:pointer;
+   cursor:hand;
+   height:21px;
+}
+
+.buttonHelp { 
+   margin-left:5px;
+   background-color:#86BB5B; 
+   color: #ffffff; 
+   font-weight:bold;
+   text-decoration: none;   
+   font-family: Arial,sans-serif;
+   text-align:center;
+   cursor:pointer;
+   cursor:hand;
+   width:18px;
+   height:19px;
+}
+
+.buttonB { 
+   margin-right:5px;
+   margin-left:5px;
+   background-color:#86BB5B; 
+   color: #ffffff; 
+   font-weight:bold;
+   text-decoration: none;   
+   font-family: Arial,sans-serif;
+   text-align:center;
+   cursor:pointer;
+   cursor:hand;
+   height:19px;
+}
+
+
+.buttonC { 
+   margin-right:5px;
+   margin-left:5px;
+   background-color:#86BB5B; 
+   color: #ffffff; 
+   font-weight:bold;
+   text-decoration: none;   
+   font-family: Arial,sans-serif;
+   text-align:center;
+   cursor:pointer;
+   cursor:hand;
+   height:19px;
+}
+
+
+div.butSet {
+  float:right;
+  margin-bottom:10px;
+    
+}
+
+
+
+
+/* PLS specific styles */
+
+/*tables*/
+td.tableColumnHeader {
+   background-color:#968F89;
+   font-weight:bold;
+   color:#FFFFFF;
+   padding:3px 5px 3px 9px;
+   margin:0px;
+   font-size:100%;
+}
+td.tableDataCellStand {
+   background-color:#EEEEEE;
+   font-weight:normal;
+   color:#000000;
+   padding:3px 5px 3px 9px;
+   margin:0px;
+   font-size:100%;
+}
+td.tableDataCellAlt {
+   background-color:#F5F5F5;
+   font-weight:normal;
+   color:#000000;
+   padding:3px 5px 3px 9px;
+   margin:0px;
+   font-size:100%;
+}
+
+/*fonts*/
+.itemFont {
+  width:60%;
+}
+
+.labelFont { 
+  font-weight:bold; 
+  width:40%;
+}
+
+.itemLargeFont {
+  font-size:16px;
+}
+
+.labelLargeFont { 
+  font-weight:bold; 
+  font-size:16px;
+}
+
+/* supplies */
+td.supplyInfo {
+  width:350px;
+}  
+
+.hpGasGaugeBorder {
+  border: 1px solid #000000;
+  height:11px;
+  padding:0px;
+  width:100%;
+}
+
+.hpDocVaryText {
+  font-size:7pt;
+  width:100%; 
+}
+
+.itemSpsFont {
+  width:10%;
+  text-align: right; 
+  white-space:nowrap; 
+}
+
+.labelSpsFont { 
+  font-weight:bold; 
+  width:90%;
+  text-align: left;
+  white-space:nowrap; 
+}
+
+.SupplyName { 
+   font-weight:bold; 
+   background-color:#003366;
+   font-weight:bold;
+   color:#FFFFFF;
+}
+
+.SupplyTonerGif { 
+   width:10%;
+   text-align:left;
+}
+
+a.SupplyLinks { 
+   text-decoration:underline;
+   color:#003399;
+}
+
+/* alert box styles */
+.alertbox {
+   margin-left:auto;
+   margin-right:auto;
+   margin-top:10px;
+   margin-bottom:10px;
+   border:7px solid #cccccc; 
+   vertical-align:top; 
+   padding:15px 10px 0px 15px;
+   width:306px;
+}
+
+.alertboxmod {
+   margin-left:auto;
+   margin-right:auto;
+   margin-top:5px;
+   margin-bottom:10px;
+   border:7px solid #cccccc; 
+   vertical-align:top; 
+   padding:15px 10px 0px 15px;
+   width:420px;
+}
+
+.alertboxImage {
+   background-image:url(/Images/info.gif);   
+   background-repeat:no-repeat;
+   padding:0px 15px 0px 15px;
+   width:26px;
+   vertical-align:top; 
+}
+
+/* height is 42 because the alertboxButtons class has a padding-top
+   style of 20 which results in the 62 minimum height. */
+.alertboxText {
+   width:240px;
+   padding-left:40px;
+   vertical-align:top; 
+   text-align:left;
+}
+
+.alertboxTextmod {
+   width:380px;
+   padding-left:40px;
+   vertical-align:top; 
+   text-align:left;
+}
+
+
+.alertboxButtons {
+   text-align:center;
+   padding-top:20px;
+   padding-bottom:7px;
+   float:none;
+   margin-left:8px;
+   margin-right:0px;
+}
+
+img {
+   border: none;
+}
+
+
+/* url link styles */
+.linkHover a:hover {
+   text-decoration:underline;
+   color:#003399;
+}
+
+
+/* common widths and heights */
+.height2px {
+   height:2px;
+}
+.width350px {
+   width:350px;
+}
+.width325px {
+   width:325px;
+}
+.width150px {
+   width:150px;
+}
+.width20px {
+   width:20px;
+}
+.width100 {
+   width:100%;
+}
+.width80 {
+   width:80%;
+}
+.width30 {
+   width:30%;
+}
+.width25 {
+   width:25%;
+}
+.width15 {
+   width:15%;
+}
+.width10 {
+   width:10%;
+}
+
+BODY.supportAndsupplies {
+	MARGIN-TOP: 0px; MARGIN-LEFT: 0px; COLOR: #000000; BACKGROUND-COLOR: #ffffff
+}
+.suppliesSupportHeaderFont {
+	FONT-SIZE: 18pt
+}
+.suppliesSupportFont {
+	FONT-SIZE: 10pt
+}
+TD.suppliesSupportWhiteFont {
+	FONT-SIZE: 10pt; COLOR: #ffffff
+}
+.suppliesSupportCopyrightFont {
+	FONT-SIZE: 7pt; FONT-FAMILY: Arial
+}
+TD.suppliesSupportFont A:link {
+	COLOR: #003399
+}
+TD.suppliesSupportFont A:active {
+	COLOR: #003399
+}
+TD.suppliesSupportCopyrightFont A:link {
+	COLOR: #003399
+}
+TD.suppliesSupportCopyrightFont A:active {
+	COLOR: #003399
+}
+TD.suppliesSupportFont A:visited {
+	COLOR: #660066
+}
+TD.suppliesSupportCopyrightFont A:visited {
+	COLOR: #660066
+}
+TD.suppliesSupportWhiteFont A:link {
+	COLOR: #ffffff
+}
+TD.suppliesSupportWhiteFont A:active {
+	COLOR: #ffffff
+}
+TD.suppliesSupportWhiteFont A:visited {
+	COLOR: #ffffff
+}
+.valignTop {
+	VERTICAL-ALIGN: top
+}
+.valignMiddle {
+	VERTICAL-ALIGN: middle
+}
+.valignBottom {
+	VERTICAL-ALIGN: bottom
+}
+.alignLeft {
+	TEXT-ALIGN: left
+}
+.alignRight {
+	TEXT-ALIGN: right
+}
+.alignCenter {
+	TEXT-ALIGN: center
+}
+.height462px {
+	HEIGHT: 462px
+}
+.height135px {
+	HEIGHT: 135px
+}
+.height250px {
+	HEIGHT: 250px
+}
+.height117px {
+	HEIGHT: 117px
+}
+.height100px {
+	HEIGHT: 100px
+}
+.height60px {
+	HEIGHT: 60px
+}
+.height50px {
+	HEIGHT: 50px
+}
+.height2px {
+	HEIGHT: 2px
+}
+.width600px {
+	WIDTH: 600px
+}
+.width560px {
+	WIDTH: 560px
+}
+.width350px {
+	WIDTH: 350px
+}
+.width325px {
+	WIDTH: 325px
+}
+.width170px {
+	WIDTH: 170px
+}
+.width150px {
+	WIDTH: 150px
+}
+.width90px {
+	WIDTH: 90px
+}
+.width50px {
+	WIDTH: 50px
+}
+.width20px {
+	WIDTH: 20px
+}
+.width10px {
+	WIDTH: 10px
+}
+.width100 {
+	WIDTH: 100%
+}
+.width80 {
+	WIDTH: 80%
+}
+.width65 {
+	WIDTH: 65%
+}
+.width35 {
+	WIDTH: 35%
+}
+.width30 {
+	WIDTH: 30%
+}
+.width25 {
+	WIDTH: 25%
+}
+.width20 {
+	WIDTH: 20%
+}
+.width15 {
+	WIDTH: 15%
+}
+.width10 {
+	WIDTH: 10%
+}
+.bgcolor003366 {
+	BACKGROUND-COLOR: #003366;
+}
+.bgcolor3366CC {
+	BACKGROUND-COLOR: #3366cc;
+}
+
+.buttonTxtSize { 
+   margin-right:5px;
+   margin-left:5px;
+   background-color:#86BB5B; 
+   color: #ffffff; 
+   font-weight:bold;
+   text-decoration: none;   
+   font-family: Arial,sans-serif;
+   text-align:center;
+   cursor:pointer;
+   cursor:hand;
+   height:19px;
+   padding-bottom:3px;
+}
+
