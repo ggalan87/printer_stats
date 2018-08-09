@@ -2,7 +2,7 @@
 # coding: utf-8
 
 """
-A tool to parse stats from status page of printers. Main file.
+A tool to parse status page of printers in purpose of keeping stats. Main file.
 
 Copyright (C) 2018 George Galanakis <galan87@gmail.com>
 
